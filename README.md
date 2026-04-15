@@ -8,7 +8,7 @@ Senior Product Manager · Bern, Switzerland · 18+ years in product, strategy, a
 
 **[basketch](https://github.com/dommalapatikk/basketch)** — Swiss grocery promotions, compared
 
-> Which of YOUR regular items are on sale this week — and at which store? Setup once in 45 seconds, check every week in 30.
+> Which of YOUR regular items are on sale this week — and at which store? Setup once in 45 seconds, check every week in 30 seconds.
 
 Swiss shoppers split their weekly groceries between Migros and Coop but have no way to compare promotions across both stores for the items they actually buy. basketch solves that: pick your items, see this week's deals side by side, get a split shopping list.
 
