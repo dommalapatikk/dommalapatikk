@@ -35,7 +35,7 @@ basketch is documented end-to-end — [PRD](https://github.com/dommalapatikk/bas
 
 ---
 
-### How It Was Built
+### How it was built
 
 Built entirely using [Claude Code](https://claude.ai/code) with 20 specialised AI agents — architect, builder, code reviewer, designer, SRE, quality gate — each with a defined role in a structured build-review-fix loop. Every module is built, independently reviewed, and verified before moving to the next.
 
