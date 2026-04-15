@@ -4,7 +4,7 @@ Senior Product Manager · Bern, Switzerland · 18+ years in product, strategy, a
 
 ---
 
-### What I'm Working On
+### What I'm working on
 
 **[basketch](https://github.com/dommalapatikk/basketch)** — Swiss grocery promotions, compared
 
