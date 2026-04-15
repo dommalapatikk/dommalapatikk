@@ -1,4 +1,4 @@
-### Hi, I'm Kiran
+### Hi, I'm Kiran 👋
 
 Senior Product Manager · Bern, Switzerland · 18+ years in product, strategy, and digital transformation across B2B SaaS, MedTech, and telco.
 
