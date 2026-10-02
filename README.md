@@ -25,7 +25,7 @@ Swiss shoppers spread their groceries across several chains, but every chain pub
 | **Frontend** | Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 |
 | **Database** | Supabase (PostgreSQL + Row-Level Security) |
 | **Data pipeline** | TypeScript, domain-driven collection module with one adapter per retailer · Python OCR step · GitHub Actions cron three times a week |
-| **AI categorisation** | Gemini (free tier) classifies each deal; a GPT-5 nano judge via OpenRouter checks the result (LLM-as-judge) |
+| **AI categorisation** | LangGraph (LangChain) classification agent: Gemini (free tier) classifies each deal, a GPT-5 nano judge via OpenRouter checks the result (LLM-as-judge) |
 | **Operations** | Runs unattended: dead-man health check, workflow keep-alive, per-retailer telemetry |
 | **Hosting** | Vercel · auto-deploy from GitHub |
 | **Testing** | Test-driven: 2,100+ automated tests (Vitest + pytest) |
