@@ -4,7 +4,9 @@ Senior Product Manager · Bern, Switzerland · 18+ years in product, strategy, a
 
 ---
 
-### What I'm working on
+### What I'm building
+
+Two personal products, built in my own time to stay hands-on with modern product and AI engineering.
 
 **[basketch](https://basketch.vercel.app/en)** — Swiss weekly deals, side by side · [code](https://github.com/dommalapatikk/basketch)
 
@@ -37,9 +39,40 @@ basketch is documented end-to-end — [PRD](https://github.com/dommalapatikk/bas
 
 ---
 
-### How it was built
+**[Compare Insurance](https://compare-insurance.vercel.app)** — Find your lowest health premium · [code](https://github.com/dommalapatikk/compare-insurance)
 
-A personal project, built in my own time with [Claude Code](https://claude.ai/code) and an agentic AI harness of 19 specialised agents — product, design, architecture, tech lead, builder, code reviewer, QA, SRE — with LLM-as-judge review. Every change follows the same loop: root-cause analysis, an agreed design, a failing test first, independent review, QA, then my approval before it goes live.
+> Which basic health insurance is cheapest for me next year, and what do I give up for it?
+
+Every autumn, Swiss residents can switch their compulsory basic insurance (Grundversicherung) before the deadline. Compare Insurance takes a postcode, birth year and accident cover, and ranks the official 2027 premiums with a guided advisor that never invents a premium: every number comes from the comparison engine.
+
+**The product:**
+- Search by postcode or municipality; the premium region is resolved behind the scenes
+- Age category derived from birth year; gender is not collected
+- Every deductible from CHF 300 to 2,500, across the official models: Standard, FLEX, PRAXIS, TEL-DIG and PHARM
+- Up to ten ranked offers, with savings against a clearly stated baseline
+- A guided advisor chat: premiums, rankings and savings come only from the comparison tool; guidance comes from official BAG and ch.ch sources
+
+**The engineering:**
+
+| | |
+|---|---|
+| **Frontend** | Next.js 16 (App Router) · React 19 · TypeScript · feature-modular architecture |
+| **Backend** | Python · FastAPI · domain-driven design (framework-free domain layer, ports and adapters) |
+| **Database** | Supabase (PostgreSQL) catalogue of normalised 2027 premiums |
+| **Data** | Official federal data only: BAG / Priminfo premiums and regions, swisstopo postcodes · pinned raw files with SHA-256 checksums |
+| **AI advisor** | LangChain / LangGraph tool-calling agent on OpenAI: three tools (premium comparison, location search, official guidance) reuse the same use case as the HTTP API, so the chat and the comparison can never disagree |
+| **Quality gates** | GitHub Actions on every push: pytest, Vitest, architecture and user-facing-copy checks, type check, build · weekly parity check against the official Priminfo calculator |
+| **Hosting** | Vercel (frontend and API) |
+
+**The PM case study:**
+
+Documented end-to-end — [PRD](https://github.com/dommalapatikk/compare-insurance/blob/main/docs/PRD.md), [UX spec](https://github.com/dommalapatikk/compare-insurance/blob/main/docs/UX_SPEC.md), [architecture](https://github.com/dommalapatikk/compare-insurance/blob/main/docs/ARCHITECTURE.md), [API spec](https://github.com/dommalapatikk/compare-insurance/blob/main/docs/API_SPEC.md), [observability](https://github.com/dommalapatikk/compare-insurance/blob/main/docs/OBSERVABILITY.md), and [data sources](https://github.com/dommalapatikk/compare-insurance/blob/main/data/SOURCES.md).
+
+---
+
+### How they were built
+
+Both are personal projects, built in my own time with [Claude Code](https://claude.ai/code) and agentic AI harnesses of specialised agents. basketch: 19 agents — product, design, architecture, tech lead, builder, code reviewer, QA, SRE — with LLM-as-judge review. Compare Insurance: 8 agents — product manager, UX researcher, designer, tech lead, engineer, code reviewer, QA, and a challenger that grills every plan before commitment — working through a written ten-stage operating model from discovery to release. In both, every change follows the same loop: root-cause analysis, an agreed design, a failing test first, independent review, QA, then my approval before it goes live.
 
 ---
 
@@ -52,4 +85,4 @@ A personal project, built in my own time with [Claude Code](https://claude.ai/co
 
 ---
 
-<sub>Based in Bern · [LinkedIn](https://linkedin.com/in/kirandommalapati) · [basketch](https://basketch.vercel.app/en)</sub>
+<sub>Based in Bern · [LinkedIn](https://linkedin.com/in/kirandommalapati) · [basketch](https://basketch.vercel.app/en) · [Compare Insurance](https://compare-insurance.vercel.app)</sub>
