@@ -72,7 +72,7 @@ Documented end-to-end — [PRD](https://github.com/dommalapatikk/compare-insuran
 
 ### How they were built
 
-Both are personal projects, built in my own time with [Claude Code](https://claude.ai/code) and agentic AI harnesses of specialised agents. basketch: 19 agents — product, design, architecture, tech lead, builder, code reviewer, QA, SRE — with LLM-as-judge review. Compare Insurance: 8 agents — product manager, UX researcher, designer, tech lead, engineer, code reviewer, QA, and a challenger that grills every plan before commitment — working through a written ten-stage operating model from discovery to release. In both, every change follows the same loop: root-cause analysis, an agreed design, a failing test first, independent review, QA, then my approval before it goes live.
+Both are personal projects, built in my own time with [Claude Code](https://claude.ai/code) and agentic AI harnesses of specialised agents. basketch: 19 agents — product, design, architecture, tech lead, builder, code reviewer, QA, SRE — with LLM-as-judge review. Compare Insurance: 8 agents — product manager, UX researcher, designer, tech lead, engineer, code reviewer, QA, and a challenger that grills every plan before commitment — working through a written ten-stage operating model from discovery to release. Both are set up around the same loop: an agreed design, a failing test first, independent code review, QA, then my approval before anything goes live.
 
 ---
 
